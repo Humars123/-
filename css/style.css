@@ -115,6 +115,7 @@
 /* banner开始 */
 .main{
 	padding-top: 1.72rem;
+	padding-bottom: 1.4rem;
 }
 .banner{
 	height: 5.36rem;
@@ -162,17 +163,128 @@
 .caidan{
 	width: 100%;
 	height:4.55rem;
-	background: red;
 	display: flex;
 	flex-wrap: wrap;
 }
 .caidan div{
 	width: 20%;
 	height: 50%;
-	background: white;
-	
+}
+.caidan div img{
+	width: 100%;
+	height: 100%;
+	background:url(https://i8.mifile.cn/v1/a1/01e0772b-fcd9-6e03-cdf3-9bd08b2d2974!144x152.webp) no-repeat center center/100% 100%;
 }
 /* 菜单结束 */
+/* 列表开始 */
+.list{
+	width: 100%;
+}
+.list-box{
+	width:100%;
+	height: 7.68rem;
+	display: flex;
+	justify-content: space-between;
+	margin:0.2rem 0;
+}
+
+.list-box>.left-box{
+	width: 49.5%;
+	height: 100%;
+}
+.list-box>.left-box img{
+	width: 100%;
+	height: 100%;
+}
+.list-box>.right-box{
+	width: 49.5%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.list-box>.right-box div{
+	width: 100%;
+	height: 49.5%;
+	background: #98FB98;
+}
+.list-box>.right-box div img{
+	width: 100%;
+	height: 100%;
+}
+.list .tupian1{
+	width: 100%;
+	height: 4.23rem;
+}
+.list .tupian1 img{
+	width: 100%;
+	height: 100%;
+}
+.list .tupian2{
+	width: 100%;
+	height: 7rem;
+	margin-bottom: 0.2rem;
+
+}
+.list .tupian2 img{
+	width: 100%;
+	height: 100%;
+}
+.list .list-box2{
+	width: 100%;
+	height: 7.68rem;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.list .list-box2 .left-box2{
+	width: 49.5%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.list .list-box2 .left-box2 img{
+	width: 100%;
+	height: 5.4rem;
+}
+
+.list .list-box2 .left-box2 .ziti{
+	text-align: left;
+	margin: 0 0.3rem;
+}
+	
+.list .list-box2 .left-box2 .ziti .xiaomi{
+	width: 100%;
+	height: 0.28rem;
+	font-size: 0.28rem;
+	color: rgba(0,0,0,.87);
+	margin-top: 0.06rem;
+	
+	
+}
+.list .list-box2 .left-box2 .ziti .pingjia{
+	width: 100%;
+	margin-top: 0.16rem;
+    font-size: 0.22rem;
+    line-height: 0.3rem;
+    color: rgba(0,0,0,.54);
+}
+.list .list-box2 .left-box2 .ziti .renminbi{
+	width: 100%;
+	height: 0.28rem;
+	font-size: 0.28rem;
+	color: #ea625b;
+	margin-top: 0.06rem;
+
+}
+
+	
+	
+
+	
+	
+
+
+/* 列表结束 */
 /* 底部开始 */
 .font{
 	height: 1.4rem;
@@ -181,6 +293,7 @@
 	bottom: 0;
 	right: 0;
 	display: flex;
+	background: white;
 }
 .font .font1{
 	width: 25%;

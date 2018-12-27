@@ -1,0 +1,357 @@
+
+HTML（超文本标记语言，由浏览器解释执行的语言）
+
+     语法<标签名>
+	        //内容
+	      /标签名
+		  
+	 <!DOCTYPE html>	         //告诉浏览器以某个（html5）版本解释执行该html文件
+	
+	html：根标签，根元素
+	
+	head：头部标签
+	
+	body：会经常编辑的标签，页面的结构全部写在body里面
+	
+	title：页面的标题
+	
+	<meta charset="utf-8" />//指定页面编码为utf-8，防止中文乱码
+	
+	标签：
+	
+	    div：经常使用的无意义的标签
+			
+			h1~h6：标题标签
+			
+			ul，li：无序列表标签
+			
+			img：引入图片的标签
+			
+			属性名=“属性值”（不同作用）
+			src=“图片的路径”
+			alt="图片加载失败时的提示文字"
+			title="鼠标悬停时的提示文字
+			
+			a：超链接标签
+			
+			   href="路径"
+				 
+				 tartget="_blank"   //在新窗口中打开页面	
+					 
+			a标签相关：
+					 a：link{
+						 //没有访问过的设置样式
+					 }
+					 a:visited{
+						 //访问过的字体样式
+					 }
+					 锚链接{
+						 
+					 }
+					 
+					 
+         spank：无意义的标签
+		 标签的分类：
+		   块标签：div，h1~h6，u1，li，p（段落），pre（格式化标签），header（头部标签）
+		      ( dl,dd,dt)（有序列表标签)<pre>文字</pre>
+		        <header>头部标签
+		         <nav>导航标签
+		         <aside>侧导航标签
+		          <main>主要内容标签
+		         <footer>尾部标签
+						 
+						 
+		             特性：独占一行，可以设置宽高，默认宽夫父盒子的宽，默认的高度由内容绝对
+							
+	     行类标签 ：a，span，i（文字斜体），em（文字斜体），b（文字粗体），strong（文字粗体），
+		            特性：不独占一行，不可以设置宽高，默认的宽高内容决定
+				表单标签：inpue：输入框
+				
+				         type="text" //文本框
+								 type='password'//密码框
+								 type="number"//数字
+				
+行类块标签：img
+		特性：不独占一行，可以设置宽高，默人的宽度由内容决定
+ 
+ 
+ CSS（层叠样式表，由浏览器解释执行的语言，可以设置网页的样式）
+ 
+ 引入方式：1.外部引入
+ 
+									<link rel="stylesheet" href="路径">
+									rel="stylesheet"     //指定link
+									
+									href="css文件的路径"
+		2.行内样式：直接写在标签的style的样式
+		3.嵌入式：<style>
+		4.
+									
+									语法结构：
+									
+									 选择器{
+											 属性名：属性值；
+											 属性名1：属性值；
+									 }
+									 
+									 选择器：
+									 
+											 *      //通用选择器（所有）
+											 
+											 div（标签名） //标签选择器
+											 
+											 .class（类名）//类名选择器，多个类名用空格隔开
+											 
+												 <div class="类名"></div>
+												 
+												 .id（id名）  //id选择器
+												 
+												 <div id="id名"></div>
+												 
+													选择器::after  //伪元素选择器
+													选择器::before //伪元素选择器   
+													选择器 选择器    //后代选择器
+													选择器，选择器    //群组选择器
+													选择器.选择器     //交叉选择器盒子时样式才会生效
+													选择器>选择器    //子代选择器
+													选择器：hover   //伪类选择器，当鼠标移入当前put
+													选择器:active   //当点击时样式会生效
+													input:focus     //当输入框获得焦点时样式会生效
+													伪类选择器：nth-child（n）//伪类选择器，选择的是第几个n盒子，n代表的是父盒子的第几个孩子，强调位置，frist child
+													伪类选择器：nth-of-type（n） //强调类型，不会受其他标签的影响
+													
+													
+													
+													
+
+													 
+												 
+									优先级：
+											 
+											 id>class>标签>* //越具体的优先级越高
+
+css属性：
+
+background：red；//设置背景：
+background-image:url//("路径")；//设置图片的路径
+background-size://水平大小 垂直大小//设置背景图片的大小
+background-repea：no-repeat；//设置背景图片不重复
+background-position：水平方向 垂直方向//设置背景图片的位置
+background-image:url（"../img/demo.jpg)no-repeat center center/100% auto;//路径不重复 水平方向位置 垂直方向位置/水平方向大小 垂直方向；//设置背景图片的位置，可是使用精灵图片
+
+
+
+
+border-redius:50%；//切圆角
+
+
+
+颜色的设置方式：英文单词
+					rgb（r，g，b）；//范围0~255
+					
+					rgba（r，g，b，透明度）//透明度的范围0~1
+					#ffffff白色，00ff00绿色，000000黑色//如果前面三个和后面三个值一样，可以省略后面的三个
+					
+					width：200px；          //宽
+					height：200px；         //高
+					overflow：hidden；      //超出隐藏
+					list-style：none；//去掉列表标签的默认样式
+					cursor：pointer；//鼠标移入边手，default（箭头）
+					opacity：0-1；//设置盒子整体的透明度
+					box-shadow：水平方向 垂直方向 模糊程度 阴影大小 颜色 inset（内阴影）
+					
+			字体的样式属性
+					font：weight size/line-height family；
+					font-style：normal；//设置字体不为斜体；obliqu（让字体为斜体）；normal（让字体变为正常）
+					font-weight：normal；//设置字体的粗细；normal（正常）（100-700）粗细大小.
+					text-decoration：none；//去掉默认的水平线，overline（上划线），line-through（中划线）
+					color：red；              //字体颜色
+					font-size：30px；           //字体大小
+					font-family："楷体"；字体的类型
+					text-align：center；//字体水平对齐方式，left（默认左），right，center
+					line-height：200px；//文字的行高，如果行高和标签高度一致，文字就会出现垂直居中的效果
+					text-indent:2em;   //设置首行字母缩进
+					letter-spacing：1px；//设置字符之间的间距
+					word-spacing:1px;   //设置单词之间的间距
+					text-transform：capittalize； //设置英文字母大小写转换，capitalize（首字母大小写）
+					float：left；              //让div横排
+					margin-left：20px；          //设置左边距
+					
+					
+																					
+【overflow:hidder;//超出隐藏
+   overflow:auto;//超出可以拖动             选择器::-webkit-scrolllbar{可以设置滚动条样式}
+	text-overflow：ellipsis；
+	white-space：nowrap；//单行文本溢出，显示省略号
+	
+	
+	overflow:hidder
+	text-overflow：ellipsis；
+	display：-webkit-box；
+	-webkit-box-
+	-webkit-line-clamp；控制行数
+																	
+																					
+	设置标签分类的相互转换：
+	
+							 dispiay：biock；          //把其他类型的标签转换为块标签
+							 dispiay：inline；         //把其他类型的标签转换为行内标签
+							 dispiay：inline-biock；   //把其他类型的标签转换为行内块标签
+							 dispiay：none；           //让标签消失，失去本身的宽高
+							 
+							 居中方式：
+			 margin：0px auto；   //让块标签居中
+		浮动：让快标签横排，使盒子脱离默认的文档流
+		 
+		     问题1：浮动的盒子撑不开父盒子的高度
+			    办法：1.如果知道父盒子的高度，就给父盒子设置高度
+					  2.给父盒子添加overflow：hidden； //经常使用
+					  3.在最后加入一个宽高为0的盒子，设置clear：both；（清除浮动）
+					  4.利用伪元素悬着器；在父盒子的最后加入一个宽高为0的伪标签														
+						 .class：：after{
+							 content：""；
+							 width：0px；
+							 height：0px；
+							 display：block；
+							 clear：both；
+							 
+							 
+			 问题2>卡顿	：其他盒子超出了掉落的基线，会发生卡顿
+			       掉落的基线：紧挨着掉落的盒子的盒子的最底部
+			问题3>右浮动使盒子顺序变反
+			      1.在html中直接把顺序变反
+				  2.用一个右浮动的大盒子包起来，让小盒子在左浮动
+			问题4>浮动的盒子默认的宽度由内容撑开	  
+			问题5>任何类型的标签使用float之后会转化为块标签
+				  
+			
+					盒子模型：
+					       内容：放东西，设置宽高
+						   填充（padding）：会使盒子变大         
+						         padding：上 右 下 左；
+								 padding：上下 左右；
+								 //直接设置上下左右
+								 padding-left
+								 padding-right
+								 padding-top
+								 
+						   边框：会使盒子变大
+						        border：大小 样式  颜色
+								      样式：solid（实线）
+									       double（双实线）
+										   dashed（虚线）
+						    外边距（margin）：不会影响盒子的大小，
+							                 同时设置一个盒子的下边距和另一个盒子的上边距会有一个重叠的效果
+							     margin：上 右 下 左；
+								 
+				margin-top的hug：子盒子的margin-top会作用到父盒子的上面
+								  
+								  触发的条件：
+								      1>子盒子为第一个拥有高度的子盒子
+									  2>父盒子没有padding-top
+									  3>父盒子没有border-top
+									  4>父盒子没有float属性
+									  5>父盒子没有overflow：hidden；超出隐藏
+									  6>子盒子没有浮动属性
+									  
+								  解决的办法：
+								      1.利用父盒子的paddig-top代替子盒子的margin-top
+									  2.给父盒子添加overflow：hidden；
+	           如何避免盒子变大：
+			   1>在盒子自身的宽高上减去border或padding的值
+			   2>设置box-sizing：border-box； 使盒子不在变大
+									  
+			 盒子的真实宽=内容的宽+padding-left + padding-right + border-left + border-right
+			          高=内容的高 + padding-top + padding-bouttom + border-top + border-bouttom  
+													    
+															 
+															 
+													
+      路径的寻找方式：
+			
+			    相对路径：相对与当前文件寻找另一个文件
+					./    //当前目录
+					../   //当前目录的上一个目录
+					
+					绝对路径：根据跟目录寻找文件
+					
+					icon引入步骤：
+					     1.查找
+							 2.添加入库
+							 3.添加到项目
+							 4.复制代码到base.css
+							 
+							 5.创建
+							   .iconfont{
+									 font-family："iconfont"
+									 
+							6.创建 html里面div
+							   <i class="iconfont">复制代码去</i>
+								 
+		定位(position)：
+		
+		  相对定位（relative）
+			  参照物：自身定位前的位置
+				特性：不会失去原来的位置
+				
+		 绝对定位（absolute）：
+		   参照物：离自身最近的已经定位(拥有定位属性)的父辈属性
+			 特性：会失去自己原来的位置，margin：0 auto；失效
+		固定定位（fixed）
+		   参照物：浏览器的可视窗口
+			 特性：会失去自己原来的位置，margin：0 auto；失效
+			 
+			 相关属性：只有使用定位属性的盒子才能使用一下属性
+			    left，right，top，bottom
+					
+					z-index：无上限；    //数值越大层级越高；相同情况下，后写的层级高
+					
+		绝对定位的盒子居中：
+					left：0；
+					right：0；
+					top：0
+					bottom：0；
+					margin：auto-+
+					display:flex;
+			flex布局使得项目的float、clear属性失效
+			1、flex容器属性：
+				flex-direction 决定主轴的方向，即item排列方向
+						row:默认方向，主轴为水平方向，项目沿主轴从左至右排列
+						column:主轴为竖直方向，项目沿主轴从上至下排列
+						row-reverse:默认方向，主轴为水平方向，项目沿主轴从右至左排列，与row方向
+						column-reverse:主轴为竖直方向，项目沿主轴从下至上排列，与column反向
+				flex-wrap  排列不下时，item如何换行
+				flex-flow  flex-direction和flex-wrap的简写
+				justify-content  item在主轴上的对齐方式
+				align-items  item在交叉轴上的对齐方式
+				align-content  多根轴线的对齐方式
+			2、flex item项目属性：在item的style中设置
+				
+				order
+				
+				
+				
+		移动端布局：
+		  rem：代表端{htm1}元素的font-size的大小
+		  em：代表父元素的font-size的大小
+		  
+		  rem布局：同比例缩放页面
+		  
+		  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		  
+		  步骤：
+		     1.设置视口
+			 2.引入rem.js	
+			   
+			      <script src="js的路径"></script>
+			3.引入bass.css
+			4.设置最大宽度不超640px（max-width）
+		  
+		  
+					
+					
+			 
+		 
+			
+					
+					

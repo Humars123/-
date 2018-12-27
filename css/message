@@ -1,0 +1,255 @@
+HTML（超文本标记语言，由浏览器解释执行的语言）
+<!DOCTYPE html>//告诉浏览器以某个（html5）版本解释执行该html文件
+html：根标签，根元素
+head:头部标签
+body：会经常编辑的标签，页面的结构全部都写在body里面
+title:页面的标题
+<meta charset="utf-8" />//指定页面编码为utf-8，防止中文乱码
+标签：div：经常使用的无意义的标签
+	 p:放段落
+     h1-h6:标题标签
+	 ul,li:无序列表标签
+	 img：引入图片的标签
+	     属性名="属性值"    //不同属性之间用空格隔开
+		 src="图片的路径"
+		 alt="图片加载失败时的提示文字"
+		 title="鼠标悬停时的提示文字"
+		 路径的寻找方式：
+		     相对路径：相对与当前文件寻找另一个文件
+			    ./      //当前目录
+				../     //当前目录的上一级目录
+			 绝对路径：根据根目录寻找文件
+	 a:超链接标签
+	         href="路径"
+			 target="_blank"   //在新窗口中打开页面
+	 span:无意义的标签
+标签的分类：
+	 块标签：div,h1~h6,ul,li,p(段落),pre(格式化标签)，header,nav,aside,main,section,footer,(dl、dd、dt)有序列表标签
+	 特性：独占一行，可以设置宽高。默认宽为父盒子的宽，默认的高度由内容决定
+	 行内标签：a,span，em、i(文字斜体)，b、strong(文字粗体)，s、del(文字划掉)
+	 特性：不独占一行，不可以设置宽高，默认的宽高由内容决定
+	 行内块标签：img
+				input:输入框
+					type="text"  //文本框
+					type="password"  //密码
+					type="number"  //数字
+				outline:none; //取消输入框获得焦点边框变色
+	 特性：不独占一行，可以设置宽高，默认的宽高由内容决定
+CSS(层叠样式表，有浏览器解释执行的语言，可以设置网页的样式)
+    引入方式：
+	1、外部引入
+	     <link rel="stylesheet" href="路径"/>
+		     rel="stylesheet"    //指定link标签引入的是css文件
+			 href="css文件的路径"
+	2、嵌入式
+		<style>
+			//CSS语法
+		</style>
+	3、行内样式：直接写在标签的style属性上
+		<div class="wrap">                                                      //行内样式
+			<div class="div" style="order:4"><h2>item 1</h2></div>
+			<div class="div" style="order:2"><h2>item 2</h2></div>
+			<div class="div" style="order:3"><h2>item 3</h2></div>
+			<div class="div" style="order:1"><h2>item 4</h2></div>
+		</div>
+	4、在一个css文件中引入另一个css文件
+		@import url("路径")
+		 语法结构：
+		     选择器{
+				 属性名:属性值;
+				 属性名1:属性值1;
+			 }
+			 选择器：
+			     *    //通用选择器（所有）
+				 div(标签名)    //标签选择器
+				 .class（类名）  //类名选择器,多个类名用空格隔开
+				     <div class="box1"></div>
+				 #id(id名)      //id选择器
+				     <div id="only"></div>
+				 选择器::after   //伪元素选择器
+				 选择器::before   //伪元素选择器
+			     选择器 选择器    //后代选择器
+				 选择器，选择器  //群组选择器
+				 选择器选择器  //交叉选择器
+				 选择器>选择器   //子代选择器
+				 选择器~li       //后面所有兄弟元素li
+				 选择器+li       //后面第一个兄弟li
+				 选择器：hover  //伪类选择器，当鼠标移入时样式才会生效
+				 选择器:active   //伪类选择器，当鼠标点击时样式才会生效
+				 input:focus{
+					 color:#ff6700
+				 }              //当输入框获得焦点时，样式生效
+				 选择器：nth-child(n)  //伪类选择器，选择的是第n个符合的盒子，n代表的是在父盒子的第几个孩子，强调位置
+				 选择器：nth-of-type(n)   //伪类选择器，强调类型，不会受其他标签的影响
+				 属性选择器：
+					选择器[class]  //有class属性
+					选择器[class="item"]   //有class属性，并且class="item"
+					选择器[class^="i"]    //有class属性，并且以i开头
+					选择器[class$="i"]    //有class属性，并且以i结尾
+					选择器[class~="item"]    //有class属性，并且类名里面有item
+					选择器[class丨="item"]    //有class属性，并且类名以"item-"开头
+
+				 a标签相关：
+					a:link{
+						//没有访问过的设置样式
+					}
+					a:visited{
+						//访问过的设置样式
+					}
+					锚链接：
+						<a href="#id"></a>  //跳到某个id 标签的顶部
+				 优先级：
+				     !important>行内样式>id>class>标签>*   //越具体的优先级越高
+			 background:red;  //设置背景
+			 background-image:url("路径")；//设置背景图片的路径
+			 background-size:水平大小 垂直大小；//设置背景图片的大小
+			 background-repeat:no-repeat;   //设置背景图片不重复
+			 background-position：水平方向 垂直方向；//设置背景图片的位置，可使用精灵图片
+			 background:url("../img/demo.jpg") no-repeat center center/100% auto;//路径 不重复 水平方向位置 垂直方向/水平方向大小 垂直方向大小
+			     颜色的设置方式：
+				     英文单词；
+					 rgb(r,g,b);  //范围0~255
+					 rgba(r,g,b,a)；  //透明度范围0~1
+					 #ffffff；   //取值范围0~f(16进制)  如果前三个与后三个值一样，可以省略后面的三个
+				 width:200px;   //宽
+				 height:200px;   //高
+				 overflow:hidden;  //超出隐藏
+				 overflow:auto //超出的部分可以拖动显示出来
+				 选择器::-webkit-scrollbar{      //webkit代表谷歌
+					 width:0;
+					 height:0;
+				 }                         //可以设置滚动条的样式
+			 字体的样式属性：
+			 (不常用)：
+				text-indent:2em;   //设置首行文字缩进
+				letter-spacing:1px;   //设置字符之间的间距
+				word-spacing:1px;   //设置单词之间的间距
+				text-transform:capitalize;   //设置英文字母大小写转换，capitalize(首字母大写),uppercase(小写转大写),lowercase(大写转小写)
+			 (常用)：	
+				 vertical-align:middle;  //设置文字以中线对齐
+				 {
+					 overflow:hidden;
+					 text-overflow:ellipsis;
+					 white-space:nowrap;
+				 } //单行文本溢出，显示省略号
+				 {
+					 overflow:hidden;
+				     text-overflow:ellipsis;
+					 display:-webkit-box;
+					 -webkit-box-orient:vertical;
+					 -webkit-line-clamp:2;    //控制行数
+				 }  //多行文本溢出，显示省略号
+				 border-radius:50%;  //切圆
+				 border-top-right-radius:10px;  //切圆角
+				 font:weight size/line-height family
+				 font-style:normal;（设置字体为正常）/oblique(字体为斜体)
+				 font-weight:normal;(设置字体粗细为正常)/bold(粗体)/100-700(细~粗)
+				 text-decoration:none;(去掉标签默认的下划线)/overline(上划线)/line-through(中划线)
+				 list-style:none;//去掉列表标签的默认样式
+				 cursor:pointer;//鼠标移入变手
+				 cursor:defult;//鼠标移入变箭头
+				 opacity:0~1;  //设置盒子整体的透明度
+				 box-shadow:水平方向 垂直方向 模糊程度 阴影大小 颜色 inset(内阴影)； //盒子的阴影
+				 text-shadow:水平方向 垂直方向 模糊程度（阴影大小不能设置） 颜色； //文字的阴影
+				 outline:none; //取消输入框获得焦点边框变色
+				 color:red;   //字体颜色
+				 font-size:40px;  //字体大小
+				 font-family:"楷体";  //字体的类型
+				 text-align:center;   //字体的水平对齐方式
+				 line-height:200px;   //文字的行高，如果行高和标签的高度一致，文字就会垂直居中的效果
+			 动画相关属性：
+				 transition:动画的名称 过渡时间 延迟；  //设置动画的样式
+				 transform:translate(x,y);  //平移
+				 transform:rotate(45deg);   //旋转
+				 transform:scale(1);   //放大缩小
+				 transform:skew(10deg 0)  //斜切
+			 标签分类的相互转化：
+				 display:block;         //把其它类型的标签转化为块标签
+				 display:inline;        //把其它类型的标签转化为行内标签
+				 display:inline-block;  //把其它类型的标签转化为行内块标签
+				 display:none;          //让标签消失，失去本身的宽高
+			 居中方式：margin:0 auto;  //让块标签居中
+		盒子模型：
+			内容：
+			填充（padding）:会使盒子变大
+				padding:上 右 下 左；（从上开始顺时针旋转）
+				padding:上下 左右；
+				padding：20px;    //直接设置四周全部填充
+			边框：会使盒子变大
+				border:大小 样式 颜色；
+					样式：solid     //实线
+						 double    //双实线
+						 dashed    //虚线
+			边距：不会使盒子变大，同时设置一个盒子的下边距和另一个盒子的上边距会有一个重叠的效果
+				margin:上 右 下 左；（从上开始顺时针旋转）
+				margin:上下 左右；
+				margin：20px;    //直接设置四周全部边距
+				margin-top的bug:子盒子的margin-top会作用到父盒子上面   
+				触发条件：
+					1、子盒子为第一个拥有高度的正常状态的子盒子
+					2、父盒子没有padding-top/border-top/float属性
+					3、父盒子没有overflow:hidden;属性
+					4、子盒子没有float属性
+				解决办法：
+					1、利用父盒子的padding-top代替子盒子的margin-top
+					2、父盒子添加overflow:hidden;属性
+				如何避免盒子变大：
+					1、在盒子自身的宽高上减去padding/border的值
+					2、设置box-sizing:border-box;   //使盒子不再变大
+				盒子的真实宽/高=width/height+padding+border
+		浮动（float）：让块标签横排，使盒子脱离默认的文档流
+			问题：
+				1、浮动的盒子撑不开父盒子的高度
+				解决办法：
+					1、如果知道父盒子的高度。就给父盒子设置高度
+					2、给父盒子添加overflow:hidden;   //经常使用
+					3、在最后加入一个宽高为0的盒子，设置clear:both;(清除浮动)
+					4、利用伪元素选择器，在父盒子的最后加入一个宽高为0的伪标签
+					.class::after{
+					content:"";
+					width:0px;
+					height:0px;
+					display:block;
+					clear:both;
+					}
+				2、卡顿：
+					掉落的基线：紧挨着掉落的盒子的盒子的最底部
+				3、右浮动使盒子顺序变反
+				解决办法：
+					1、在html中直接把顺序写反
+					2、用一个右浮动的大盒子包起来，让小盒子左浮动
+				4、浮动的盒子默认的宽度由内容撑开
+				5、任何类型的标签使用float之后会转化为块标签
+定位（position）:
+	相对定位：(relative):
+		参照物：自身定位之前的位置
+		特性：不会失去自身原来的位置
+	绝对定位：（absolute）:
+		参照物：离自身最近的已经定位（拥有定位属性）的父辈盒子
+		特性：会失去自身原来的位置，margin:0 auto;失效
+	固定定位(fixed)：
+		参照物：浏览器的可视窗口
+		特性：会失去自己原来的位置，margin:0 auto;失效
+相关属性：只有使用定位属性的盒子才能使用以下属性
+	left、right、top、bottom
+	z-index;无上限  //数值越大，层级越高
+	绝对定位的盒子居中：
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		margin：auto;
+	flex:
+		flex布局使得项目的float、clear属性失效
+	移动端布局：
+		rem:代表根元素的font-size的大小
+		em:代表父盒子的font-size的大小
+		rem布局：同比例缩放页面
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		步骤：
+			1、设置视口
+			2、引入rem.js
+				<script src="js的路径"></script>
+			3、引入base.css
+			4、设置最大宽度不超过640px(max-width);

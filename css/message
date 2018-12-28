@@ -253,3 +253,15 @@ CSS(层叠样式表，有浏览器解释执行的语言，可以设置网页的�
 				<script src="js的路径"></script>
 			3、引入base.css
 			4、设置最大宽度不超过640px(max-width);
+			
+			
+			表单标签：都是行内标签
+			 
+			  <form action="提交地址"method="提交的方法"></form>
+			               method:get 默认的提交方式，提交的信息会出现在地址栏，提交信息量少时使用
+						          post：提交的信息不会出现在地址栏，提交信息量比较大时使用
+								  
+								  input type="输入框的类型"name=”提交时的参数名"value"输入框的默认内容"maxlenght"输入框可以输入的最长字符 required(输入框必须填入信息)
+								  
+						   
+						   

@@ -42,7 +42,10 @@
 	border-right: 0.03rem solid #efefef;
 	color: #3c3c3c;
 	
-	
+}
+.aside::-webkit-scrollbar{
+	height: 0;
+	width: 0;
 }
 .aside div{
 	width: 100%;

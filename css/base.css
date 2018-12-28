@@ -17,9 +17,8 @@ ul,li{
   url('//at.alicdn.com/t/font_984507_uyd4zhv6v2s.ttf') format('truetype'),
   url('//at.alicdn.com/t/font_984507_uyd4zhv6v2s.svg#iconfont') format('svg');
 }
-
 .iconfont{
-	font-family: "iconfont"
+	font-family: "iconfont";
 }
 a.{
 	text-decoration: none;

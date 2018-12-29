@@ -263,5 +263,43 @@ CSS(层叠样式表，有浏览器解释执行的语言，可以设置网页的�
 								  
 								  input type="输入框的类型"name=”提交时的参数名"value"输入框的默认内容"maxlenght"输入框可以输入的最长字符 required(输入框必须填入信息)
 								  
-						   
+								  
+	  表格
+	     table：
+		        border  //设置出现边框
+				
+				style="border-collapse；"  //设置边框合并
+				caption                    //表格的标题
+				therd                      //表格的头部
+				   tr    //行
+				   th    //列，一个格子
+				   
+				   
+				tbody                       //表格的身体
+				   tr    //行
+				   td    //列，一个格子
+				   
+				   colspan="n"  n：合并的个数 //合并列
+				   rowspan="n"               合并行
+				   
+				   
+				tfoot                       //表格的底部
+				    tr    //行
+				    th    //列，一个格子
+								  
+								 
+		
+		@media only screen and （min-width:1000px) and (max-width:1200){}
+			          //当屏幕大于1000小于1200时生效
+					  
+					  .box{
+						   background：red；
+						   }
+		优点：可以快捷的实现适应不同分辨率设备的布局
+		
+		缺点：代码多，造成页面打开速度变慢
+		
+		      工作量大，效率慢
+			  
+			  折中的适应不同设备的方式，显示的效果不佳
 						   

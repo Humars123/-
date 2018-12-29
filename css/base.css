@@ -11,16 +11,17 @@ ul,li{
 }
 @font-face {
   font-family: 'iconfont';  /* project id 984507 */
-  src: url('//at.alicdn.com/t/font_984507_uyd4zhv6v2s.eot');
-  src: url('//at.alicdn.com/t/font_984507_uyd4zhv6v2s.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_984507_uyd4zhv6v2s.woff') format('woff'),
-  url('//at.alicdn.com/t/font_984507_uyd4zhv6v2s.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_984507_uyd4zhv6v2s.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_984507_icbrkcw1wn.eot');
+  src: url('//at.alicdn.com/t/font_984507_icbrkcw1wn.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_984507_icbrkcw1wn.woff') format('woff'),
+  url('//at.alicdn.com/t/font_984507_icbrkcw1wn.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_984507_icbrkcw1wn.svg#iconfont') format('svg');
 }
+
 .iconfont{
 	font-family: "iconfont";
 }
-a.{
+a{
 	text-decoration: none;
 }
 .clear::after{

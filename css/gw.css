@@ -1,0 +1,278 @@
+.dindan{
+	max-width: 640px;
+	height: 100vh;
+	margin: 0 auto;
+}
+/* 头部开始 */
+.header{
+	width: 100%;
+	height: 1.38rem;
+	background: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+    top: 0;
+	left: 0;
+	z-index: 888;
+	
+}
+.iconfont{
+	color: #919191;
+	font-size: 0.58rem;
+	padding: 0 0.5rem;
+}
+.text{
+	font-size: 0.4rem;
+}
+/* 头部结束 */
+/* 内容开始 */
+.middle{
+	width: 100%;
+	height: 100vh;
+	padding: 1.38rem 0 1.4rem 0;
+	box-sizing: border-box;
+}
+.neiron{
+	width: 100%;
+	height: 3.5rem;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+}
+.neiron .tu1 img{
+	width: 0.7rem;
+	height: 0.7rem;
+	margin: 0 0.15rem 0.4rem;
+	
+	
+}
+.neiron .tu2 img{
+	width: 2.65rem;
+    height: 2.65rem;
+	margin-right: 0.35rem;
+	border: 1px solid #eee;
+	border-radius: 2px;
+}
+.neiron .text{
+	height: 3.5rem;
+	width: 8rem;
+}
+.text .yangshi{
+	font-size: 0.45rem;
+	color: #666;
+	margin-top: 0.62rem;
+	margin-bottom: 0.2rem;
+}
+.text .jiage{
+	font-size: 0.4rem;
+	color: #3c3c3c;
+}
+.hezi{
+	width: 100%;
+	height: 0.9rem;
+	margin-top: 0.2rem;
+	display: flex;
+	justify-content: space-between;
+}
+.fuhao{
+	width: 2.7rem;
+	height: 100%;
+	display: flex;
+	border: 1px solid #eee;
+
+	
+}
+.fuhao .jian{
+	width: 0.9rem;
+	height: 100%;
+	background: #fbfbfb;
+}
+.fuhao .jian div{
+	width: 0.5rem;
+	height: 3px;
+	background: #cbcbcb;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+}
+
+.fuhao .one{
+	width: 0.9rem;
+	height: 100%;
+	background: #fff;
+	font-size: 0.5rem;
+	color: #3e3e3e;
+	text-align: center;
+	line-height:0.9rem;
+	
+}
+.fuhao .jia{
+	width: 0.9rem;
+	height: 100%;
+	background: #fbfbfb;
+	position: relative;
+}
+.fuhao .jia .now{
+	width: 0.5rem;
+	height: 3px;
+	background: #676767;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+}
+.jia .now1{
+	width: 3px;
+	height: 0.5rem;
+	background: #676767;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.4rem;
+}
+.zhong{
+	width: 100%;
+	height: 1rem;
+	padding: 0.2rem 0.5rem;
+	box-sizing: border-box;
+	font-size: 0.35rem;
+	color: #bcbcbc;
+}
+.cai{
+	height: 2.1rem;
+	width: 100%;
+	background: #f6f6f6;
+	text-align: center;
+	overflow: hidden;
+	margin-bottom: 0.2rem;
+}
+.cai p{
+	font-size: 0.5rem;
+	color: #d3a981;
+	margin-top: 0.5rem;
+}
+.cai .xihuan{
+	width: 100%;
+	height: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.cai .xihuan .line{
+	width: 2.9rem;
+	height: 2px;
+	background: #cecece;
+	margin-top: 0.25rem;
+
+}
+.cai .xihuan .line-wenzi{
+	font-size: 0.4rem;
+	color: #7b7b7b;
+	line-height: 0.5rem;
+}
+.list{
+	width: 100%;
+}
+
+.list .list-box2{
+	width: 100%;
+	height: 7.68rem;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.list .list-box2 .left-box2{
+	width: 49.5%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.list .list-box2 .left-box2 img{
+	width: 100%;
+	height: 5.4rem;
+}
+
+.list .list-box2 .left-box2 .ziti{
+	text-align: left;
+	margin: 0 0.3rem;
+}
+	
+.list .list-box2 .left-box2 .ziti .xiaomi{
+	width: 100%;
+	height: 0.28rem;
+	font-size: 0.28rem;
+	color: rgba(0,0,0,.87);
+	margin-top: 0.06rem;
+	
+	
+}
+.list .list-box2 .left-box2 .ziti .pingjia{
+	width: 100%;
+	margin-top: 0.16rem;
+    font-size: 0.22rem;
+    line-height: 0.3rem;
+    color: rgba(0,0,0,.54);
+}
+.list .list-box2 .left-box2 .ziti .renminbi{
+	width: 100%;
+	height: 0.28rem;
+	font-size: 0.28rem;
+	color: #ea625b;
+	margin-top: 0.06rem;
+}
+/* 底部开始 */
+.foot{
+	width: 100%;
+	height: 1.5rem;
+	display: flex;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+.foot .jine{
+	background: #fff;
+	width: calc(100% / 3);
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.foot .jine .gon{
+	font-size: 0.45rem;
+	color: #9b9b9b;
+	margin-top: 0.1rem;
+}
+.foot .jine .end{
+	display: flex;
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+.foot .jine .end .yi{
+	font-size: 0.6rem;
+	color: #fd5622;
+	
+}
+.foot .jine .end .yuan{
+	font-size: 0.45rem;
+	color: #9b9b9b;
+	margin-left: 0.1rem;
+	margin-top: 0.1rem;
+
+}
+
+
+.foot .gouwu{
+	width: calc(100% / 3);
+	height: 100%;
+	background: #f4f4f4;
+	font-size: 0.5rem;
+	color: #696969;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.foot .qu{
+	width: calc(100% / 3);
+	height: 100%;
+	background: #ff6801;
+	font-size: 0.5rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -302,4 +302,43 @@ CSS(层叠样式表，有浏览器解释执行的语言，可以设置网页的�
 		      工作量大，效率慢
 			  
 			  折中的适应不同设备的方式，显示的效果不佳
-						   
+			
+			
+			img, background-image:ur1()
+			
+			
+		 路径
+		     base64  //减少网络请求，减少相对路径带来的404，图片小于10k时使用
+				 
+				 icon     //不会失真
+				 
+			居中方式：1.确定宽高（1）	 margin：0px auto； //让块标签居中
+			         2. left：0； right0；top：0；bottom：0；margin：auto
+							 3.
+									position：absolute
+									left：50%；            //父盒子的50%；
+									top：50%;
+									margin-left:-width/2;    //自身的50%
+									margin-top:-height/2;
+							
+								4.position：absolute
+								  left：calc（50% - 100px）；
+									top： calc（50% - 100px）；
+									
+
+							
+				 
+		 2不确定宽高
+				 
+				  1.flex布局
+					
+					2.left：50%；父盒子的50%   tranfrom:tranlate(-50%);//自身的50%
+					
+					3.
+					  <div style="display:table">
+						  <div style="display：table-cell；text-algin：center；vertical-align：middle">
+							   <div style="display:inline-block;">
+								 </div>
+							<div>
+						</div>
+					
